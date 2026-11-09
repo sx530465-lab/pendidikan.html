@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UM - Universitas Negeri Malang</title>
+<link href="c:\xampp\htdocs\satria bima_rpl1\tugas pendidikan\471319053_576326765143139_2497537145431674903_n.jpg" rel="stylesheet">
+<style>
+  *{margin:0; padding:0; box-sizing:border-box; font-family: 'Poppins', sans-serif;}
+  body{background:#fff; color:#333;}
+
+  /* NAVBAR */
+  header{background:#003366; padding:15px 8%; display:flex; justify-content:space-between; align-items:center; position:sticky; top:0; z-index:999;}
+  header .logo{color:#FFC72C; font-size:24px; font-weight:700;}
+  header nav ul{list-style:none; display:flex; gap:25px;}
+  header nav ul li a{color:#fff; text-decoration:none; font-size:14px; font-weight:500;}
+  header .btn{ background:#FFC72C; color:#003366; padding:9px 20px; border-radius:25px; text-decoration:none; font-weight:700; font-size:14px;}
+
+  /* HERO */
+  .hero{display:flex; align-items:center; padding:70px 8%; gap:50px; background:#F0F6FF;}
+  .hero-text h1{font-size:38px; color:#003366; line-height:1.3; margin-bottom:20px;}
+  .hero-text p{color:#555; line-height:1.8; margin-bottom:25px;}
+  .hero img{width:45%; border-radius:15px;}
+
+  /* SECTION TITLE */
+  .section-title{text-align:center; font-size:32px; color:#003366; margin:50px 0 30px; font-weight:700;}
+
+  /* PILIHAN PRODI */
+  .menu{padding:60px 8%;}
+  .menu-grid{display:grid; grid-template-columns:repeat(3, 1fr); gap:30px;}
+  .menu-card{background:#E6F0FF; border-radius:15px; padding:18px; text-align:center; transition:0.3s;}
+  .menu-card:hover{transform:translateY(-8px); border:2px solid #FFC72C; background:#fff;}
+  .menu-card img{width:100%; height:200px; object-fit:cover; border-radius:10px; margin-bottom:15px;}
+  .menu-card h3{color:#003366; margin-bottom:10px;}
+
+  /* 1. SECTION DAFTAR MAHASISWA BARU / BOOK A TABLE */
+  #daftar{padding:60px 8%; background:#fff;}
+  .daftar-container{display:flex; gap:30px; align-items:flex-start; flex-wrap:wrap;}
+  .daftar-form{flex:1; min-width:300px;}
+  .daftar-form h2{text-align:center; color:#003366; margin-bottom:20px; font-style:italic; font-family: 'Georgia', serif;}
+  .daftar-form input, .daftar-form select{width:100%; padding:12px 15px; margin-bottom:15px; border:1px solid #ccc; border-radius:8px; font-size:14px;}
+  .daftar-form button{width:100%; background:#FFC72C; color:#003366; padding:12px; border:none; border-radius:25px; font-weight:bold; cursor:pointer; font-size:16px;}
+  .daftar-form button:hover{background:#e6b800;}
+  .daftar-map{flex:1; min-width:300px;}
+  .daftar-map iframe{width:100%; height:350px; border:0; border-radius:12px;}
+
+  /* 2. SECTION TESTIMONI / KOMENTAR REKANAN */
+  #testimoni{padding:60px 8%; background:#F0F6FF;}
+  #testimoni h2{text-align:center; color:#003366; margin-bottom:30px; font-style:italic; font-family: 'Georgia', serif;}
+  .testi-container{display:flex; gap:20px; justify-content:center; flex-wrap:wrap;}
+  .testi-box{background:#003366; color:#fff; padding:25px; border-radius:10px; width:45%; min-width:300px;}
+  .testi-box p{font-size:14px; margin-bottom:15px; line-height:1.6;}
+  .testi-box h4{margin-bottom:5px;}
+  .testi-box span{font-size:12px; opacity:0.8;}
+
+  /* FOOTER */
+  footer{background:#003366; color:#fff; text-align:center; padding:25px; margin-top:50px;}
+
+  @media(max-width: 992px){
+    .hero{flex-direction:column;} .hero img{width:100%;}
+    .menu-grid{grid-template-columns:repeat(2, 1fr);}
+  }
+  @media(max-width: 600px){
+    .menu-grid{grid-template-columns:1fr;}
+    .daftar-container{flex-direction:column;}
+    .testi-box{width:100%;}
+  }
+</style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <div class="logo">UM</div>
+    <nav>
+      <ul>
+        <li><a href="#">Beranda</a></li>
+        <li><a href="#">Fakultas</a></li>
+        <li><a href="#">PMB</a></li>
+        <li><a href="#">Kontak</a></li>
+      </ul>
+    </nav>
+    <a href="#daftar" class="btn">Daftar SNPMB</a>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Universitas Negeri Malang <br>Unggul, Mandiri, Berkarakter</h1>
+      <p>
+        Bergabunglah dengan 10 Fakultas dan 170+ Program Studi di UM. 
+        Cetak prestasi, kembangkan potensi, dan wujudkan masa depan bersama 
+        Kampus Pendidikan terbaik di Asia Tenggara.
+      </p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000" alt="Kampus UM">
+  </section>
+
+  <!-- PILIHAN PRODI -->
+  <section class="menu">
+    <h2 class="section-title">Pilihan Program Studi</h2>
+    <div class="menu-grid">
+      <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800" alt="FIP">
+        <h3>Fakultas Ilmu Pendidikan</h3>
+        <p>Mencetak guru dan tenaga pendidik profesional berstandar internasional.</p>
+      </div>
+      <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800" alt="FT">
+        <h3>Fakultas Teknik</h3>
+        <p>Teknik Elektro, Mesin, Sipil, Informatika dengan lab industri.</p>
+      </div>
+      <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=800" alt="FE">
+        <h3>Fakultas Ekonomi</h3>
+        <p>Manajemen, Akuntansi, Bisnis Digital siap kerja & wirausaha.</p>
+      </div>
+      <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=800" alt="FS">
+        <h3>Fakultas Sastra</h3>
+        <p>Sastra Inggris, Jepang, dan Pendidikan Bahasa.</p>
+      </div>
+      <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=800" alt="FIS">
+        <h3>Fakultas Ilmu Sosial</h3>
+        <p>Sosiologi, Geografi, PKn, Ilmu Hukum.</p>
+      </div>
+      <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=800" alt="FIK">
+        <h3>Fakultas Ilmu Keolahragaan</h3>
+        <p>Pusat pembinaan atlet dan ilmu keolahragaan.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 1. SECTION DAFTAR MAHASISWA BARU -->
+  <section id="daftar">
+    <h2 class="section-title">Daftar Mahasiswa Baru</h2>
+    <div class="daftar-container">
+      <form class="daftar-form">
+        <input type="text" placeholder="Nama Lengkap" required>
+        <input type="text" placeholder="Nomor HP" required>
+        <input type="email" placeholder="Email" required>
+        <select required>
+          <option value="">Pilih Fakultas & Prodi</option>
+          <option>Teknik Informatika</option>
+          <option>Manajemen</option>
+          <option>Pendidikan Bahasa Inggris</option>
+          <option>Ilmu Hukum</option>
+        </select>
+        <input type="date">
+        <button type="submit">DAFTAR SEKARANG</button>
+      </form>
+      <div class="daftar-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.2!2d112.612!3d-7.966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd628!2sUniversitas%20Negeri%20Malang!5e0!3m2!1sid!2sid!4v0" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. SECTION TESTIMONI ALUMNI -->
+  <section id="testimoni">
+    <h2 class="section-title">Apa Kata Alumni UM</h2>
+    <div class="testi-container">
+      <div class="testi-box">
+        <p>"Kuliah di UM mengubah hidup saya. Dosennya hebat, fasilitasnya lengkap, dan lulus langsung dapat kerja di BUMN."</p>
+        <h4>Andi Saputra</h4>
+        <span>Alumni Teknik Elektro 2022 - Engineer di PLN</span>
+      </div>
+      <div class="testi-box">
+        <p>"Lingkungan kampus UM sangat mendukung untuk berprestasi. Saya bangga jadi bagian dari keluarga besar UM."</p>
+        <h4>Sinta Dewi</h4>
+        <span>Alumni Pendidikan Bahasa Inggris 2023 - Guru</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>©️ 2026 Universitas Negeri Malang | Jl. Semarang No.5, Malang | um.ac.id</p>
+
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Footer UM</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+  *{margin:0; padding:0; box-sizing:border-box; font-family: 'Poppins', Arial, sans-serif;}
+  
+  footer{background:#000; color:#fff; padding:40px 8% 20px;}
+  .footer-container{display:grid; grid-template-columns:repeat(3, 1fr); gap:40px; margin-bottom:30px;}
+  
+  .footer-col h3{font-size:20px; margin-bottom:20px; color:#fff; font-weight:600;}
+  .footer-col p{font-size:14px; line-height:1.8; color:#ccc; margin-bottom:8px;}
+  
+  /* Kolom Tengah */
+  .footer-center{text-align:center;}
+  .footer-center h2{font-size:24px; margin-bottom:10px; color:#FFC72C;} /* Kuning UM */
+  .footer-center p{font-size:14px; color:#ccc; margin-bottom:15px;}
+  
+  /* Icon Sosial Media */
+  .social-icons{display:flex; justify-content:center; gap:15px;}
+  .social-icons a{color:#fff; font-size:20px; width:35px; height:35px; border-radius:50%; 
+    display:flex; align-items:center; justify-content:center; transition:0.3s;}
+  .social-icons a:hover{color:#FFC72C;} /* Hover kuning UM */
+  
+  /* Copyright */
+  .copyright{text-align:center; padding-top:20px; border-top:1px solid #333; font-size:13px; color:#aaa;}
+  .copyright span{color:#003366; font-weight:bold;} /* Biru UM */
+
+  @media(max-width:768px){
+    .footer-container{grid-template-columns:1fr; text-align:center;}
+    .social-icons{justify-content:center;}
+  }
+</style>
+</head>
+<html>
+
+<!-- FOOTER UM -->
+<footer>
+  <div class="footer-container">
+    
+    <!-- KOLOM 1: CONTACT US -->
+    <div class="footer-col">
+      <h3>Contact Us</h3>
+      <p>Location: Jl. Semarang No.5, Malang, Jawa Timur</p>
+      <p>Telp: (0341) 551312</p>
+      <p>Email: humas@um.ac.id</p>
+    </div>
+
+    <!-- KOLOM 2: TENGAH -->
+    <div class="footer-col footer-center">
+      <h2>UM</h2>
+      <p>Universitas Negeri Malang</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <!-- KOLOM 3: OPENING HOURS -->
+    <div class="footer-col">
+ml>
+      <h3>Opening Hours</h3>
+      <p>Senin - Jumat: 07.30 - 16.00 WIB</p>
+      <p>Sabtu: 07.30 - 12.00 WIB</p>
+      <p>Minggu: Tutup</p>
+    </div>
+
+  </div>
+
+  </footer>
+  </html
